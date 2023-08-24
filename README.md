@@ -1,11 +1,13 @@
 # git-prompt.zsh
 
-To use it _source_ into your `.zshrc` file.
+To use it: _source_ into your `.zshrc` file. And add to your PS1.
 
 For example:
 
 ```bash
-source $ZDOTDIR/plugins/git-prompt.zsh/git-prompt.zsh
+PS1="$(git_prompt) %"
+
+source ${ZDOTDIR:-$HOME/.zsh}/git-prompt.zsh/git-prompt.zsh
 ```
 
 ## Cloning
